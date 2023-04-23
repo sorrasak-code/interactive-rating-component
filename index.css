@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+.attribution{
+  position: absolute;
+  bottom: 10%;
+  color: var(--orange);
+}
+:root{
+  /* primary */
+  --orange: hsl(25, 97%, 53%);
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --lightgrey: hsl(217, 12%, 63%);
+  --mediumgrey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Overpass', sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+body{
+  background-color: var(--very-dark-blue);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  background-color: var(--dark-blue);
+  padding: 2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  min-width: 330px;
+}
+
+.container .circle .star {
+  background-color: white;
+  width: 40px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color:hsl(216, 20%, 25%);
+}
+.container .circle .star img {
+  width: 14px;
+  height: 14px;
+}
+
+.container .title {
+  color: var(--white);
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+.container .content {
+  color: var(--lightgrey);
+  line-height: 1.5;
+  padding-top: 1rem;
+}
+
+.container ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 1.5rem;
+}
+
+.container ul li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container ul li button {
+  background-color: hsl(216, 20%, 25%);
+  width: 40px;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1rem;
+  color: var(--lightgrey);
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+}
+
+.container ul li button:hover{
+  background-color: var(--orange);
+  color: var(--white);
+}
+
+.container ul li button:focus {
+  background-color: var(--lightgrey);
+  color: var(--white);
+}
+
+.container .btn{
+  display: flex;
+  padding: 1.5rem 0 0.5rem;
+  width: 100%;
+  margin: auto;
+}
+
+.container .btn button {
+  background-color: var(--orange);
+  border: none;
+  color: var(--white);
+  padding: 0.825rem 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  transition: 0.5s;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+}
+
+.container .btn button:hover {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.thank-you {
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.thank-you .box-img {
+  padding-top: 1.5rem;
+}
+
+.thank-you .selected {
+  padding-top: 1rem;
+}
+
+.thank-you .selected p {
+  color: var(--orange);
+  background-color: hsl(216, 20%, 25%);
+  padding: 0.5rem 0.825rem;
+  border-radius: 1rem;
+}
+
+.thank-you .title {
+  padding-top: 1.825rem;
+}
+
+.thank-you .content p {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.thank-you .btn {
+  padding-top : 0;
+}
+
+.hidden{
+  display: none;
+}
